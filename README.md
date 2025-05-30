@@ -55,7 +55,7 @@ _Notes_
 
 **Dataset Analyzed:** [Harpur et al., 2019](https://doi.org/10.1093/gbe/evz018)
 
-ANGSD analysis are found in the '''biological_data_analysis/ANGSD_script/'''
+ANGSD analysis are found in the **biological_data_analysis/ANGSD_script/**
 
 Libraries, distance matrices, and Respect-estimated spectra for _Apis mellifera_ populations.
 
