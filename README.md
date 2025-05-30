@@ -53,7 +53,7 @@ _Notes_
 ### _Apis mellifera_:
 [RefSeq Assembly](https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003254395.2/)
 
-**Dataset Analyzed:** (Harpur et al., 2019) ["Integrative Genomics Reveals the Genetics and Evolution of the Honey Bee’s Social Immune System "](https://doi.org/10.1093/gbe/evz018)
+**Dataset Analyzed:** [Harpur et al., 2019](https://doi.org/10.1093/gbe/evz018)
 
 Libraries, distance matrices, and Respect-estimated spectra for _Apis mellifera_ populations.
 
