@@ -6,7 +6,7 @@ Data for ReSkmer is described here, but is found in this [Google Drive](https://
 | Script Title | Use |
 |----|----|
 | submit_skmer_simulations.slurm | runs main simulation pipeline: _make child genomes with many distances, generate Illumina skims with ART at target coverages, run Skmer on data_ |
-| make_genomes.py | Helper script for _submit_skmer_simulations.slurm _adding mutations to genome. |
+| make_genomes.py | Helper script for _submit_skmer_simulations.slurm_ adding mutations to genome. |
 | submit_simulate_and_assemble.slurm | Generates high coverage, pair-end ART simulations and runs megahit assembly. |
 
 ### Genomes Used in Simulations:
@@ -54,6 +54,8 @@ _Notes_
 [RefSeq Assembly](https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003254395.2/)
 
 **Dataset Analyzed:** [Harpur et al., 2019](https://doi.org/10.1093/gbe/evz018)
+
+Scripts for ANGSD analysis are found [here.](https://github.com/HomereAMK/Gskimming/blob/main/Markdowns/31_echavel_PI_FST.md)
 
 Libraries, distance matrices, and Respect-estimated spectra for _Apis mellifera_ populations.
 
