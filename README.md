@@ -6,7 +6,7 @@ Data for ReSkmer is described here, but is found in this [Google Drive](https://
 | Script Title | Use |
 |----|----|
 | submit_skmer_simulations.slurm | runs main simulation pipeline: _make child genomes with many distances, generate Illumina skims with ART at target coverages, run Skmer on data_ |
-| make_genomes.py | Helper script for _submit_skmer_simulations.slurm _adding mutations to genome. |
+| make_genomes.py | Helper script for _submit_skmer_simulations.slurm_ adding mutations to genome. |
 | submit_simulate_and_assemble.slurm | Generates high coverage, pair-end ART simulations and runs megahit assembly. |
 
 ### Genomes Used in Simulations:
