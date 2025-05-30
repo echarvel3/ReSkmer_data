@@ -1,0 +1,45 @@
+# ReSkmer Data
+Scripts for ReSkmer paper.
+Data for ReSkmer is described here, but is found in this [Google Drive](https://drive.google.com/drive/folders/1ZEV9GtrLZyszui1nTkQKkjJYdT3dSju_?usp=drive_link)
+## Simulations:
+### Scripts:
+| Script Title | Use |
+|----|----|
+| submit_skmer_simulations.slurm | runs main simulation pipeline: _make child genomes with many distances, generate Illumina skims with ART at target coverages, run Skmer on data_ |
+| make_genomes.py | Helper script for _submit_skmer_simulations.slurm _adding mutations to genome. |
+| submit_simulate_and_assemble.slurm | Generates high coverage, pair-end ART simulations and runs megahit assembly. |
+
+### Population Distances Simulations:
+Includes _genome skims_ , _distance matrices_ , and _parameter estimates_ generated for _one_ of the replicates used in the ReSkmer paper for all genomes (club moss, moss, oyster chromosome, nematode, rotifer, leech). (Distances from 0.1% to 2%)
+
+### Phylogenetic-Level Distances:
+Includes _genome skims_ , _distance matrices_ , and _parameter estimates_ generated for _one_ of the replicates used in the ReSkmer paper for two genomes (moss and rotifer). (Distances from 5% to 20%)
+
+### Low-Quality Assembly Experiments:
+Includes _re-assembled_ genomes (at 10X and 50X),  _distance matrices_ , and _parameter estimates_ used in the ReSkmer paper for all genomes. Skims used ReSkmer are the same ones used for the _Population Distance Simulations_.
+
+### High-Error Experiments:
+Includes _genome skims_ , _distance matrices_ , and _parameter estimates_ generated for _one_ of the replicates used in the ReSkmer paper for two genomes (moss and rotifer). (Distances from 0% and 1%, phred scores _25, 23, 20_).
+
+---
+## Biological Data:
+The SLURM pipeline used to paralellize Skmer across nodes can be found here:
+### Scripts:
+| Script Title | Use |
+|----|----|
+| 1_run-bbmap.slurm | runs bbmap_pipeline.sh in ./other_scripts/ (_bbduk.sh_ and _dedupe.sh_ from the BBtools suite).|
+| 2_run-consult.slurm | Archaea and Bactrial decontamination using Consult-II. **WoL: Reference Phylogeny for Microbes (bacteria and archaea) (18 Gb - lightweight and robust)** library recommended.|
+| 3_run-kraken2.slurm| Human read removal using standard human library as described in Kraken2 manual. |
+| 4_downsample-reads.slurm | Uses "reformat.sh" from BBtools to downsample reads given an estimated genome size and average read length. | 
+| 5_run-skmer-query.slurm | Runs *skmer query* command to generate histograms, stats, and mash files for each sample|
+| 6_skmer-distance.slurm  | Runs _skmer distance_ to generate distance matrix|
+
+_Notes_
+- You may have to change the paths where the scripts or libraries have been placed.
+- Install kraken2 via anaconda (or export to PATH if installed via github).
+
+### _Apis mellifera_:
+Libraries, distance matrices, and Respect-estimated spectra for _Apis mellifera_ populations.
+
+### _Drosophila melanogaster_:
+Libraries, distance matrices, and Respect-estimated spectra for _Drosophila melanogaster_ populations.
