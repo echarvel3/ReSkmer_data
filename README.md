@@ -9,6 +9,18 @@ Data for ReSkmer is described here, but is found in this [Google Drive](https://
 | make_genomes.py | Helper script for _submit_skmer_simulations.slurm _adding mutations to genome. |
 | submit_simulate_and_assemble.slurm | Generates high coverage, pair-end ART simulations and runs megahit assembly. |
 
+| **Species**                  | **Assembly**           | **Genome Size** | **UR** |
+|-----------------------------|------------------------|------------------|--------|
+| *Selaginella moellendorffii* | GCF_000143415.4        | 208,216,466      | 0.42   |
+| *Chondrus crispus*          | GCF_000350225.1        | 103,988,016      | 0.51   |
+| *Ostrea edulis*             | GCF_947568905.1*       | 98,251,904       | 0.64   |
+| *Nemopilema nomurai*        | GCA_003864495.1        | 210,407,387      | 0.71   |
+| *Brachionus plicatilis*     | GCA_010279815.1        | 101,125,688      | 0.85   |
+| *Hirudo medicinalis*        | GCA_011800805.1        | 155,214,494      | 0.90   |
+
+**Table**: **Assemblies used in simulations.** Only a single scaffold (NC_079166.1) of the *O. edulis* assembly is represented in our simulations to provide a uniqueness ratio in between other genomes.
+
+
 ### Population Distances Simulations:
 Includes _genome skims_ , _distance matrices_ , and _parameter estimates_ generated for _one_ of the replicates used in the ReSkmer paper for all genomes (club moss, moss, oyster chromosome, nematode, rotifer, leech). (Distances from 0.1% to 2%)
 
