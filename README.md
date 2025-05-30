@@ -55,6 +55,8 @@ _Notes_
 
 **Dataset Analyzed:** [Harpur et al., 2019](https://doi.org/10.1093/gbe/evz018)
 
+Scripts for ANGSD analysis are found [here.](https://github.com/HomereAMK/Gskimming/blob/main/Markdowns/31_echavel_PI_FST.md)
+
 Libraries, distance matrices, and Respect-estimated spectra for _Apis mellifera_ populations.
 
 ### _Drosophila melanogaster_:
