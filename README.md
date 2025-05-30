@@ -10,7 +10,7 @@ Data for ReSkmer is described here, but is found in this [Google Drive](https://
 | submit_simulate_and_assemble.slurm | Generates high coverage, pair-end ART simulations and runs megahit assembly. |
 
 ### Genomes Used in Simulations:
-| **Species**                  | **Assembly**           | **Genome Size** | **UR** |
+| **Species**                  | **Assembly**           | **Genome Size (bp)** | **UR** |
 |-----------------------------|------------------------|------------------|--------|
 | *Selaginella moellendorffii* | GCF_000143415.4        | 208,216,466      | 0.42   |
 | *Chondrus crispus*          | GCF_000350225.1        | 103,988,016      | 0.51   |
